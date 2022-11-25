@@ -80,7 +80,7 @@
           arrows: false,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 3
+          slidesToShow: 1
         }
       },
       {
@@ -89,7 +89,7 @@
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '140px',
           slidesToShow: 1
         }
       }
@@ -129,3 +129,13 @@
       }
     ]
   });
+
+  /*  show menu navbar mobile */
+ function myFunctionNavbarMobile() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+      x.className += " responsive";
+  } else {
+      x.className = "topnav";
+  }
+}
